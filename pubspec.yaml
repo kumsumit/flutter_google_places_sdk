@@ -1,0 +1,47 @@
+name: flutter_google_places_sdk
+description: A Flutter plugin for google places sdk that uses the native libraries on each platform
+version: 0.4.3
+homepage: https://github.com/matanshukry/flutter_google_places_sdk/tree/master/flutter_google_places_sdk
+publish_to: none
+
+environment:
+  sdk: ">=3.13.0 <4.0.0"
+  flutter: ">=3.47.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_google_places_sdk_platform_interface: 
+    git: https://github.com/kumsumit/flutter_google_places_sdk_platform_interface.git
+  flutter_google_places_sdk_android: 
+    git: https://github.com/kumsumit/flutter_google_places_sdk_android.git  
+  flutter_google_places_sdk_ios: 
+    git: https://github.com/kumsumit/flutter_google_places_sdk_ios.git
+  flutter_google_places_sdk_web: 
+    git: https://github.com/kumsumit/flutter_google_places_sdk_web.git
+  flutter_google_places_sdk_windows: 
+    git: https://github.com/kumsumit/flutter_google_places_sdk_windows.git
+  flutter_google_places_sdk_linux: 
+    git: https://github.com/kumsumit/flutter_google_places_sdk_linux.git
+  flutter_google_places_sdk_macos: 
+    git: https://github.com/kumsumit/flutter_google_places_sdk_macos.git
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: flutter_google_places_sdk_android
+      ios:
+        default_package: flutter_google_places_sdk_ios
+      web:
+        default_package: flutter_google_places_sdk_web
+      windows:
+        default_package: flutter_google_places_sdk_windows
+      linux:
+        default_package: flutter_google_places_sdk_linux
+      macos:
+        default_package: flutter_google_places_sdk_macos
